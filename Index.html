@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>T2MOVIES — Type text, get video</title>
+  <meta name="description" content="T2MOVIES demo — type text and generate short AI videos (demo embed)" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#f97316;--muted:#94a3b8;--white:#e6eef8}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071024 0%, #081728 100%);color:var(--white);min-height:100vh;display:flex;flex-direction:column;align-items:center}
+    header{width:100%;max-width:980px;padding:28px 20px;display:flex;align-items:center;gap:16px}
+    .logo{font-weight:800;color:var(--accent);font-size:20px}
+    .hero{width:100%;max-width:980px;padding:28px;background:rgba(255,255,255,0.02);border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .controls{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#071024;padding:10px 14px;border-radius:8px;font-weight:700;text-decoration:none}
+    .demo-wrap{margin-top:18px;border-radius:10px;overflow:hidden;background:#000;display:flex;justify-content:center;align-items:center;min-height:420px}
+    iframe{border:0;width:100%;height:520px}
+    footer{margin:28px 0 60px;color:var(--muted);font-size:13px}
+    .small{font-size:13px;color:var(--muted);margin-top:10px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">T2MOVIES</div>
+  </header>
+
+  <main class="hero" role="main" style="width:100%">
+    <h1>Type text → Get a short AI video (Demo)</h1>
+    <p class="lead">This is a demo. Try prompts like: <em>"Two anime warriors fight in a burning city; One says: 'I will protect everyone' | The other replies: 'Not on my watch'"</em></p>
+
+    <div class="controls">
+      <a class="btn" href="#demo">Try Demo</a>
+    </div>
+
+    <div id="demo" class="demo-wrap" style="margin-top:20px">
+      <!-- Replace this URL with your HuggingFace Space link -->
+      <iframe src="https://huggingface.co/spaces/your-hf-username/your-space-name?__theme=dark" title="T2MOVIES Demo"></iframe>
+    </div>
+
+    <div class="small">
+      <strong>Note:</strong> This demo runs on Hugging Face Space. Free version may be slow.
+    </div>
+  </main>
+
+  <footer>
+    © T2MOVIES — demo site
+  </footer>
+</body>
+</html>
